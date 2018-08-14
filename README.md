@@ -61,6 +61,7 @@ Clone the `RainbowOctopus` repo locally. In a terminal, run:
 ```
 $ git clone https://github.com/kevinxbrown/RainbowOctopus.git
 ```
+(If you open this project in Unity now, without completing the other steps below, you will see errors in the console)
 
 ### 2. Create Watson services with IBM Cloud
 
@@ -93,9 +94,9 @@ Get the Workspace ID by clicking the 3 vertical dots on the `Workspaces` tab. Sa
 
 ### 4. Add libraries to Unity project
 
-Download and unzip the [Watson Unity SDK](https://github.com/watson-developer-cloud/unity-sdk). The project was created using version 2.4.0.
+Download and unzip the [Watson Unity SDK](https://github.com/watson-developer-cloud/unity-sdk). The project was created using version 2.6.0.
 
-In Unity, in the Project Explorer, click on Assets. Drag the unziped unity-sdk-x.x.x folder (on the file system) into the Assets window (in Unity).
+Open Unity (and ignore the reference errors for now). In the Project Explorer, click on Assets. Drag the unziped unity-sdk-x.x.x folder (on the file system) into the Assets window (in Unity).
 
 Download and unzip the [Unity ARKit Plugin Repo](https://bitbucket.org/Unity-Technologies/unity-arkit-plugin/overview). Within the Assets folder, there is a UnityARKitPlugin folder. Drag this folder (on the file system) into the Assets window (in Unity) alongside the unity-sdk-2.4.0 just created.
 

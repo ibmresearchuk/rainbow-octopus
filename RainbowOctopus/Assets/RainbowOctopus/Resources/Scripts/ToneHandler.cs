@@ -123,7 +123,9 @@ public class ToneHandler : MonoBehaviour
 
     }
 
-    private void OnGetToneAnalyze(ToneAnalyzerResponse resp, Dictionary<string, object> customData)
+
+
+    private void OnGetToneAnalyze(ToneAnalysis resp, Dictionary<string, object> customData)
     {
 
         // Example response from Tone Analyzer ( Version  2017-05-25)
@@ -131,11 +133,11 @@ public class ToneHandler : MonoBehaviour
 
 
 
-        double anger = resp.document_tone.tone_categories[0].tones[0].score;
-        double disgust = resp.document_tone.tone_categories[0].tones[1].score;
-        double fear = resp.document_tone.tone_categories[0].tones[2].score;
-        double joy = resp.document_tone.tone_categories[0].tones[3].score;
-        double sadness = resp.document_tone.tone_categories[0].tones[4].score;
+        double anger = resp.DocumentTone.ToneCategories[0].Tones[0].Score.Value;
+        double disgust = resp.DocumentTone.ToneCategories[0].Tones[1].Score.Value;
+        double fear = resp.DocumentTone.ToneCategories[0].Tones[2].Score.Value;
+        double joy = resp.DocumentTone.ToneCategories[0].Tones[3].Score.Value;
+        double sadness = resp.DocumentTone.ToneCategories[0].Tones[4].Score.Value;
 
 
         var tones = new SortedDictionary<string, double> {
