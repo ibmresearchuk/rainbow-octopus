@@ -340,7 +340,7 @@ GameObject:
   - component: {fileID: 327478040}
   - component: {fileID: 327478036}
   m_Layer: 0
-  m_Name: OctopusLogic
+  m_Name: OctopusController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -394,7 +394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   octopus: {fileID: 1652703877}
-  octopusTransformParent: {fileID: 1286139107}
+  octopusMovement: {fileID: 1286139109}
   debugPanel: {fileID: 785070554}
 --- !u!4 &327478039
 Transform:

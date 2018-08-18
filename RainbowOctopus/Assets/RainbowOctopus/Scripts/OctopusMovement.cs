@@ -11,6 +11,8 @@ using UnityEngine;
 /// </summary>
 public class OctopusMovement : MonoBehaviour
 {
+	public float walkingSpeed = 0.05f;
+
 	public Animator octopusAnimator;
 
 	private bool walking = false;
@@ -31,7 +33,7 @@ public class OctopusMovement : MonoBehaviour
             // doing the 'drag' parts. These parts are between frames 141 and 190, and after frame 260.
 			if ((frameNumber > 141 && frameNumber < 190) || frameNumber > 260)
 			{
-				transform.position += transform.forward * Time.deltaTime * -0.1f;
+				transform.position += transform.forward * Time.deltaTime * walkingSpeed;
 			}
 		}
 	}
@@ -50,6 +52,15 @@ public class OctopusMovement : MonoBehaviour
 	public void StopForwardMotion()
 	{
 		walking = false;
+	}
+
+    /// <summary>
+    /// Turns the character.
+    /// </summary>
+    /// <param name="degrees">Degrees.</param>
+    public void Turn(float degrees)
+	{
+		transform.Rotate(new Vector3(0, degrees, 0));
 	}
 
 }

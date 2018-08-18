@@ -175,7 +175,7 @@ using UnityEngine.UI;
         Intenta2.text = Intenta1.text;                              // we move the existing intents up the archive intent fields in the debug panel
         Intenta1.text = ResultsField.text;                          // we move the existing intents up the archive intent fields in the debug panel
         ResultsField.text = "#" + _tempIntent.ToString();           // and update the current intent field with the new Intent.
-        OctopusLogic octopusLogic = gameObject.GetComponent<OctopusLogic>();        // We then ask the OctopusLogic class to
+        OctopusController octopusLogic = gameObject.GetComponent<OctopusController>();        // We then ask the OctopusLogic class to
         octopusLogic.processIntent(_tempIntent.ToString());                         // process the new Intent and update the appropriate GameObjects.
 
         Log.Debug("ConversationHandler.OnMessage()", "Intent: {0}", _tempIntent);

@@ -5,16 +5,18 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class OctopusLogic : MonoBehaviour
+public class OctopusController : MonoBehaviour
 {
-	public GameObject octopus, octopusTransformParent, debugPanel;
-	private OctopusMovement c;
+	public GameObject octopus;
+
+	public OctopusMovement octopusMovement;
+
+	public GameObject debugPanel;
+   
 	Animator octopusAnimator;
 
-	// Use this for initialization
 	void Start()
 	{
-		c = octopusTransformParent.GetComponent<OctopusMovement>();                           // the transform object of the parent.
 		octopusAnimator = octopus.GetComponent<Animator>();
 	}
 
@@ -28,21 +30,21 @@ public class OctopusLogic : MonoBehaviour
 				{
 					Log.Debug("OctopusLogic.processIntent()", "Setting Octopus to Wave");
 					octopusAnimator.CrossFade("Wave", 0);                   // With a crossFade of >0, it seems to take too long to respond to the command.
-					c.StopForwardMotion();
+					octopusMovement.StopForwardMotion();
 					break;
 				}
 			case ("walk"):
 				{
 					Log.Debug("OctopusLogic.processIntent()", "Setting Octopus to Walk");
 					octopusAnimator.CrossFade("Walk", 0);                   // With a crossFade of >0, it seems to take too long to respond to the command.
-					c.StartForwardMotion();
+					octopusMovement.StartForwardMotion();
 					break;
 				}
 			case ("jump"):
 				{
 					Log.Debug("OctopusLogic.processIntent()", "Setting Octopus to Jump");
 					octopusAnimator.CrossFade("Jump", 0);                       // With a crossFade of >0, it seems to take too long to respond to the command.
-					c.StopForwardMotion();
+					octopusMovement.StopForwardMotion();
 					break;
 				}
 			case ("bigger"):
@@ -62,14 +64,14 @@ public class OctopusLogic : MonoBehaviour
 			case ("clockwise"):
 				{
 					Log.Debug("OctopusLogic.processIntent()", "Turning 90 degrees Clockwise");
-					octopusTransformParent.transform.Rotate(0, 90, 0);
+					octopusMovement.Turn(90);
 					break;
 				}
 
 			case ("anticlockwise"):
 				{
 					Log.Debug("OctopusLogic.processIntent()", "Turning 90 degrees Anticlockwise");
-					octopusTransformParent.transform.Rotate(0, -90, 0);
+					octopusMovement.Turn(-90);
 					break;
 				}
 			case ("debug"):
@@ -86,7 +88,7 @@ public class OctopusLogic : MonoBehaviour
 				{
 					Log.Debug("OctopusLogic.processIntent()", "Setting Octopus to idle");
 					octopusAnimator.CrossFade("Idle1", 0);
-					c.StopForwardMotion();
+					octopusMovement.StopForwardMotion();
 					break;
 				}
 			default:
