@@ -15,12 +15,9 @@ public class PlaceOnPlane : MonoBehaviour
         {
             Touch touch = Input.GetTouch(0);
 
-            Debug.Log("Touch detected.");
-
             if (sessionOrigin.Raycast(touch.position, hits, TrackableType.PlaneWithinPolygon))
             {
                 Pose hitPose = hits[0].pose;
-                Debug.Log("Hit detected: " + hitPose.position);
                 transform.position = hitPose.position;
             }
         }
