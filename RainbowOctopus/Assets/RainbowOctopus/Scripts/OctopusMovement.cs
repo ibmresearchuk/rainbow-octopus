@@ -12,10 +12,16 @@ using UnityEngine;
 public class OctopusMovement : MonoBehaviour
 {
 	public float walkingSpeed = 0.05f;
-
-	public Animator octopusAnimator;
+    
+	private Animator octopusAnimator;
 
 	private bool walking = false;
+
+
+	private void Start()
+	{
+		octopusAnimator = GetComponent<Animator>();
+	}
 
 
 	void Update()
