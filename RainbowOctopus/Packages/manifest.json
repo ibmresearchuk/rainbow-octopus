@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "com.unity.xr.arkit": "1.0.0-preview.11"
+    "com.unity.xr.arkit": "1.0.0-preview.14",
+    "com.unity.xr.arcore": "1.0.0-preview.18"
   }
 }
