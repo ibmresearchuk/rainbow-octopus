@@ -10,14 +10,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class OctopusTransform : MonoBehaviour {
-    private GameObject hcp;                         // The Octopus' parent GameObject.
-    Animator octopusAnimator;
+                      // The Octopus' parent GameObject.
+    public Animator octopusAnimator;
     private bool walking = false;                   // Assume we are not walking to begin with.
-	// Use this for initialization
-	void Start () {
-        hcp = GameObject.Find("HitCubeParent");     // Just for clarity, but this script is attached to the HitCubeParent GameObject.
-        octopusAnimator = GameObject.Find("octopus").GetComponent<Animator>(); // Get the Octopus's Animator object.
-	}
+
 
 	// Update is called once per frame
 	void Update () {
@@ -32,7 +28,7 @@ public class OctopusTransform : MonoBehaviour {
                                                                                                 // number of frames.
             if ((frameNumber > 141 && frameNumber < 190) || frameNumber > 260)                  // Then, if it's the part we want to 'walk' in
             {
-                hcp.transform.position += hcp.transform.forward * Time.deltaTime * -0.1f;       // we move the octopus forward - it will go in the direction it is facing.
+                transform.position += transform.forward * Time.deltaTime * -0.1f;       // we move the octopus forward - it will go in the direction it is facing.
             }
         }
 	}

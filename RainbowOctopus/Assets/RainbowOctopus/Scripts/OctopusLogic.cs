@@ -6,18 +6,13 @@ using UnityEngine.UI;
 
 
 public class OctopusLogic : MonoBehaviour {
-    private GameObject octopus, hcp, debugPanel;
+    public GameObject octopus, octopusTransformParent, debugPanel;
     private OctopusTransform c;
     Animator octopusAnimator;
 
 	// Use this for initialization
 	void Start () {
-        debugPanel = GameObject.Find("DebugPanel");                         // so we can show / hide the panel if required.
-
-        hcp = GameObject.Find("HitCubeParent");                             // so we can rotate the parent of the octopus (which sets the forward direction)
-        c = hcp.GetComponent<OctopusTransform>();                           // the transform object of the parent.
-
-        octopus = GameObject.Find("octopus");                               // so we can get the animator, and scale the octopus itself.
+        c = octopusTransformParent.GetComponent<OctopusTransform>();                           // the transform object of the parent.
         octopusAnimator = octopus.GetComponent<Animator>();
 	}
 
@@ -59,14 +54,14 @@ public class OctopusLogic : MonoBehaviour {
             case ("clockwise"):
                 {
                     Log.Debug("OctopusLogic.processIntent()", "Turning 90 degrees Clockwise");
-                    hcp.transform.Rotate(0, 90, 0);
+                    octopusTransformParent.transform.Rotate(0, 90, 0);
                     break;
                 }
 
             case ("anticlockwise"):
                 {
                     Log.Debug("OctopusLogic.processIntent()", "Turning 90 degrees Anticlockwise");
-                    hcp.transform.Rotate(0, -90, 0);
+                    octopusTransformParent.transform.Rotate(0, -90, 0);
                     break;
                 }
             case ("debug") : {
