@@ -9,48 +9,47 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1585201990951412}
+  m_RootGameObject: {fileID: 1568414836858200}
   m_IsPrefabAsset: 1
---- !u!1 &1585201990951412
+--- !u!1 &1568414836858200
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4266372707468888}
-  - component: {fileID: 64925081986755876}
-  - component: {fileID: 33790042174619686}
-  - component: {fileID: 23747677035716922}
-  - component: {fileID: 114973852414686920}
-  - component: {fileID: 114999847245811208}
-  - component: {fileID: 114750936167521158}
+  - component: {fileID: 4381455002505794}
+  - component: {fileID: 114420653519937450}
+  - component: {fileID: 114505523171528268}
+  - component: {fileID: 64075061905826896}
+  - component: {fileID: 33940188020947210}
+  - component: {fileID: 23757564266038714}
   m_Layer: 0
-  m_Name: AR Feathered Plane
+  m_Name: AR Plane Visualizer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4266372707468888
+--- !u!4 &4381455002505794
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1585201990951412}
+  m_GameObject: {fileID: 1568414836858200}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.266}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23747677035716922
+--- !u!23 &23757564266038714
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1585201990951412}
+  m_GameObject: {fileID: 1568414836858200}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 1
@@ -60,7 +59,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 23e2748d52724824fb92be95f957d7dc, type: 2}
+  - {fileID: 2100000, guid: 3186dc706b0504efdb1f72bff0c85429, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -80,19 +79,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33790042174619686
+--- !u!33 &33940188020947210
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1585201990951412}
+  m_GameObject: {fileID: 1568414836858200}
   m_Mesh: {fileID: 0}
---- !u!64 &64925081986755876
+--- !u!64 &64075061905826896
 MeshCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1585201990951412}
+  m_GameObject: {fileID: 1568414836858200}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -101,24 +100,12 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 0}
---- !u!114 &114750936167521158
+--- !u!114 &114420653519937450
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1585201990951412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fe544a55a03bab479ce73b5bf64215e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FeatheringWidth: 0.2
---- !u!114 &114973852414686920
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1585201990951412}
+  m_GameObject: {fileID: 1568414836858200}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f66da7470dce8f4d821d71dd2b1d4ac, type: 3}
@@ -126,12 +113,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DestroyOnRemoval: 1
   m_VertexChangedThreshold: 0.01
---- !u!114 &114999847245811208
+--- !u!114 &114505523171528268
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1585201990951412}
+  m_GameObject: {fileID: 1568414836858200}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d180956a54db4646a1c6342921672ad, type: 3}

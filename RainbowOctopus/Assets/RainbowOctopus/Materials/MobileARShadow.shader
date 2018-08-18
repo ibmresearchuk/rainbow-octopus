@@ -57,7 +57,7 @@ Shader "Custom/MobileARShadow"
              
                 // 6.) The LIGHT_ATTENUATION samples the shadowmap (using the coordinates calculated by TRANSFER_VERTEX_TO_FRAGMENT
                 // and stored in the structure defined by LIGHTING_COORDS), and returns the value as a float.
-                float attenuation = max(0.7, LIGHT_ATTENUATION(i));
+                float attenuation = LIGHT_ATTENUATION(i);
 
                 return fixed4(1.0,1.0,1.0,1.0) * attenuation;
             }
