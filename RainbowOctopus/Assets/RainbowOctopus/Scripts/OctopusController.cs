@@ -79,7 +79,7 @@ public class OctopusController : MonoBehaviour
 					Log.Debug("OctopusLogic.processIntent()", "Toggling the debug window");
 					//if (debugPanel.alpha == 1f) debugPanel.alpha = 0f;
 					//else debugPanel.alpha = 1f;
-					if (debugPanel.active) debugPanel.SetActive(false);
+					if (debugPanel.activeSelf) debugPanel.SetActive(false);
 					else debugPanel.SetActive(true);
 					break;
 				}

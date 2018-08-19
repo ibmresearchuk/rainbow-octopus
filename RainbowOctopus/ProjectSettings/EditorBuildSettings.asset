@@ -5,19 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: Assets/UnityARKitPlugin/Examples/UnityARKitScene/UnityARKitScene.unity
-    guid: c159f2591a9b5c843b0a0442451f78f8
   - enabled: 1
     path: Assets/RainbowOctopus/Scenes/RainbowOctopus.unity
     guid: 4e85241c5e7b048a3a9e042242893f3c
-  - enabled: 0
-    path: Assets/UnityARKitPlugin/ARKitRemote/UnityARKitRemote.unity
-    guid: 3ed73c0c9d4b76a418a0541c0cefd3ac
-  - enabled: 0
-    path: Assets/unity-sdk-2.6.0/Examples/ServiceExamples/ExampleStreaming.unity
-    guid: 57c7b454bb032a34fa0f938231dba758
   m_configObjects: {}
