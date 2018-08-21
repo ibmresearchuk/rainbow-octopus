@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: RO KS
+  productName: Rainbow Octopus
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -70,7 +70,7 @@ PlayerSettings:
   captureSingleScreen: 0
   muteOtherAudioSources: 1
   Prepare IOS For Recording: 0
-  Force IOS Speakers When Recording: 0
+  Force IOS Speakers When Recording: 1
   deferSystemGesturesMode: 0
   hideHomeButton: 0
   submitAnalytics: 1
@@ -151,7 +151,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    iOS: com.aboutkris.test.RainbowOctopusKS
+    iOS: replace.with.a.unique.app.id
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 16
@@ -309,9 +309,9 @@ PlayerSettings:
   enableInternalProfiler: 0
   logObjCUncaughtExceptions: 1
   enableCrashReportAPI: 0
-  cameraUsageDescription: camera for AR
-  locationUsageDescription: Location for language
-  microphoneUsageDescription: Receive speech control
+  cameraUsageDescription: Camera access is required for augmented reality.
+  locationUsageDescription: Location is required for language management.
+  microphoneUsageDescription: Microphone access is required for speech control.
   switchNetLibKey: 
   switchSocketMemoryPoolSize: 6144
   switchSocketAllocatorPoolSize: 128
