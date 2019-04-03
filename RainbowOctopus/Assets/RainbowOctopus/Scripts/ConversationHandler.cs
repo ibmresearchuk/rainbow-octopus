@@ -40,17 +40,17 @@ public class ConversationHandler : MonoBehaviour
 	private string _serviceUrl;
 	[Tooltip("The workspaceId to run the example.")]
 	[SerializeField]
-	private string _workspaceId = "424620ea-3b72-46af-a7f1-f3963a46497d";
+	private string _workspaceId = "xxx";
 	[Tooltip("The version date with which you would like to use the service in the form YYYY-MM-DD.")]
 	[SerializeField]
 	private string _versionDate = "2017-05-25";
 	[Header("CF Authentication")]
 	[Tooltip("The authentication username.")]
 	[SerializeField]
-	private string _username = "c121f0ad-9666-472a-a755-d11a099916eb";
+	private string _username = "xxx";
 	[Tooltip("The authentication password.")]
 	[SerializeField]
-	private string _password = "n5ciJr7lzUIi";
+	private string _password = "xxx";
 	[Header("IAM Authentication")]
 	[Tooltip("The IAM apikey.")]
 	[SerializeField]
